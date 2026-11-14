@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesrael — חנות חלפים לטסלה</title>
+  <meta name="description" content="חלקי חילוף ואביזרים לטסלה. עיינו במחירים והוסיפו לעגלה — רכישה מקוונת תתווסף בקרוב." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="דף הבית של Tesrael">
+        <img src="logo.png" alt="Tesrael" class="brand-logo">
+      </a>
+      <nav class="nav">
+        <a href="#catalog">קטלוג</a>
+        <a href="#models">דגמים</a>
+        <a href="#about">אודות</a>
+      </nav>
+      <button class="cart-btn" id="openCartBtn" aria-label="פתיחת עגלה">
+        <span>עגלה</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-new">
+      <div class="container hero-new-inner">
+        <h1 class="hero-title-main">אביזרים וחלקים לטסלה – בלי להמר על הזמנות מחו&quot;ל.</h1>
+        <p class="hero-sub-main">מלאי שנבדק ונבחר בקפידה בארץ, התאמה מדויקת לדגם שלך ומחיר סופי בשקלים – בלי מכס, בלי הפתעות ובלי סיכונים.</p>
+        <a href="#models" class="model-select-cta" id="modelSelectCta">בחר את דגם הטסלה שלך</a>
+      </div>
+    </section>
+
+    <section class="section" id="models">
+      <div class="container">
+        <div class="section-head">
+          <h2>בחר דגם</h2>
+          <p>לחצו על הדגם שלכם כדי לראות מוצרים מתאימים.</p>
+        </div>
+        <div class="model-cards" id="modelCards">
+          <a class="model-card all-models-chip" href="products.html?model=All" data-model="All">
+            <div class="model-card-image-wrap model-visual-all"><span class="all-products-label">כל המוצרים</span></div>
+            <span class="model-card-name">הכל</span>
+          </a>
+          <a class="model-card" href="products.html?model=Model%203" data-model="Model 3">
+            <div class="model-card-image-wrap"><img src="https://tse2.mm.bing.net/th?q=Tesla+Model+3+car+white+background&w=640&h=360&c=7&rs=1&p=0&dpr=1&pid=1.7&mkt=en-US&adlt=moderate" alt="Tesla Model 3" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.parentElement.innerHTML='<span class=&quot;model-card-fallback&quot;>Tesla Model 3</span>';"></div>
+            <span class="model-card-name">Model 3</span>
+            <span class="model-card-sub">כולל Highland</span>
+          </a>
+          <a class="model-card" href="products.html?model=Model%20Y" data-model="Model Y">
+            <div class="model-card-image-wrap"><img src="https://tse2.mm.bing.net/th?q=Tesla+Model+Y+car+white+background&w=640&h=360&c=7&rs=1&p=0&dpr=1&pid=1.7&mkt=en-US&adlt=moderate" alt="Tesla Model Y" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.parentElement.innerHTML='<span class=&quot;model-card-fallback&quot;>Tesla Model Y</span>';"></div>
+            <span class="model-card-name">Model Y</span>
+            <span class="model-card-sub">כולל Juniper</span>
+          </a>
+          <a class="model-card" href="products.html?model=Model%20S" data-model="Model S">
+            <div class="model-card-image-wrap"><img src="https://tse2.mm.bing.net/th?q=Tesla+Model+S+car+white+background&w=640&h=360&c=7&rs=1&p=0&dpr=1&pid=1.7&mkt=en-US&adlt=moderate" alt="Tesla Model S" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.parentElement.innerHTML='<span class=&quot;model-card-fallback&quot;>Tesla Model S</span>';"></div>
+            <span class="model-card-name">Model S</span>
+          </a>
+          <a class="model-card" href="products.html?model=Model%20X" data-model="Model X">
+            <div class="model-card-image-wrap"><img src="https://tse2.mm.bing.net/th?q=Tesla+Model+X+car+white+background&w=640&h=360&c=7&rs=1&p=0&dpr=1&pid=1.7&mkt=en-US&adlt=moderate" alt="Tesla Model X" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.parentElement.innerHTML='<span class=&quot;model-card-fallback&quot;>Tesla Model X</span>';"></div>
+            <span class="model-card-name">Model X</span>
+          </a>
+          <a class="model-card" href="products.html?model=Cybertruck" data-model="Cybertruck">
+            <div class="model-card-image-wrap"><img src="https://tse2.mm.bing.net/th?q=Tesla+Cybertruck+vehicle+white+background&w=640&h=360&c=7&rs=1&p=0&dpr=1&pid=1.7&mkt=en-US&adlt=moderate" alt="Tesla Cybertruck" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.parentElement.innerHTML='<span class=&quot;model-card-fallback&quot;>Cybertruck</span>';"></div>
+            <span class="model-card-name">Cybertruck</span>
+          </a>
+        </div>
+        <div id="modelTrust" class="model-trust">
+          <div class="trust-box">כל מוצר מסומן בבירור לפי דגם ושנתון – בלי ניחושים ובלי טעויות.</div>
+          <div class="trust-box">המוצרים כבר כאן בארץ. לא מחכים שבועות לחבילות מעבר לים.</div>
+          <div class="trust-box">משלמים בשקלים עם חשבונית מסודרת – בלי עמלות שחרור, מע"מ מפתיע או עיכובים במכס.</div>
+          <div class="trust-box">מתלבט? שולחים הודעה ומוודאים התאמה לפני שמשלמים.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <h2>מוצרים מובילים</h2>
+          <p>מבחר מוצרים פופולריים — לחצו למעבר לדף המוצרים המלא.</p>
+        </div>
+        <div class="featured-grid" id="featuredGrid"></div>
+        <div style="margin-top:16px; text-align:center;">
+          <a href="products.html?model=All" class="btn btn-secondary">לכל המוצרים</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>אודות Tesrael</h2>
+          <p>Tesrael היא חנות קונספט לבעלי רכבי טסלה המחפשים חלקי חילוף ואביזרים איכותיים. אנו מתמקדים בתמחור ברור, התאמה לפי דגם וחוויית גלישה נקייה.</p>
+          <p><strong>הערה:</strong> זהו אתר תצוגה מקדימה. ניתן לעיין במוצרים, לראות מחירים ולהוסיף פריטים לעגלה, אך ביצוע רכישה אינו זמין עדיין.</p>
+        </div>
+        <ul class="feature-list">
+          <li><strong>תמחור שקוף</strong><span>כל פריט מוצג עם מחיר ברור מראש.</span></li>
+          <li><strong>התאמה לדגם</strong><span>סינון חלקים עבור Model S, 3, X, Y ו-Cybertruck.</span></li>
+          <li><strong>מבחר נבחר</strong><span>חלקי תחזוקה, חוץ, פנים ואביזרים נפוצים.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner footer-rich">
+      <div class="footer-links">
+        <a href="shipping.html">מדיניות משלוחים</a>
+        <a href="returns.html">מדיניות החזרות וביטול עסקה</a>
+        <a href="terms.html">תקנון האתר</a>
+        <a href="contact.html">יצירת קשר</a>
+      </div>
+      <div class="footer-contact">
+        <p><strong>יצירת קשר:</strong> טלפון: 050-0000000 · מייל: info@tesrael.co.il · <a href="https://wa.me/972500000000?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%95%D7%95%D7%93%D7%90%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%A9%D7%9C%20%D7%9E%D7%95%D7%A6%D7%A8%20%D7%9C%D7%98%D7%A1%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99" target="_blank" rel="noopener">וואטסאפ</a></p>
+      </div>
+      <p>&copy; <span id="year"></span> Tesrael. חנות תצוגה — אינה חנות רשמית של טסלה.</p>
+      <p class="footer-note">Tesla ושמות הדגמים הם סימנים מסחריים של Tesla, Inc. ומשמשים לצורך ציון התאמה בלבד.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" id="whatsappFloat" href="https://wa.me/972500000000?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%95%D7%95%D7%93%D7%90%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%A9%D7%9C%20%D7%9E%D7%95%D7%A6%D7%A8%20%D7%9C%D7%98%D7%A1%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99" target="_blank" rel="noopener" aria-label="יצירת קשר בוואטסאפ">וואטסאפ</a>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="עגלת קניות">
+    <div class="cart-header">
+      <h3>העגלה שלך</h3>
+      <button class="icon-btn" id="closeCartBtn" aria-label="סגירת עגלה">&times;</button>
+    </div>
+    <div class="cart-body" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>סיכום ביניים</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <p class="cart-disclaimer">המחירים מוצגים להמחשה בלבד. התשלום אינו זמין עדיין.</p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">המשך לתשלום</button>
+    </div>
+  </aside>
+
+  <div class="product-modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="פרטי מוצר">
+    <div class="product-modal-inner" id="productModalInner"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
